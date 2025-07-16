@@ -1,0 +1,181 @@
+/*CSS code for Mechs and Marines Style*/
+
+body {
+background-color: gray;
+}
+
+.margin-table {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.margins {
+    background-color: rgb(180, 180, 180);
+    height: 100%;
+}
+
+.Navigation {
+    border-style:double;
+}
+
+.lore-layout {
+display: grid;
+grid-template-columns: 10% 60% 10%;
+padding: 10px;
+place-content: center;
+}
+
+.heading-layout {
+display: grid;
+grid-template-columns: auto auto auto auto auto auto auto auto;
+grid-template-rows: auto 80px;
+column-gap: 40px;
+row-gap: 30px;
+place-content: center;
+font-size: 50px;
+text-align: center;
+background-color: rgb(105, 105, 105);
+border-radius: 10px;
+
+}
+
+a.navlinks {
+    background-color: rgb(165, 165, 165);
+    border-radius: 5px;
+    border-style: double;
+    color: rgb(5, 5, 54);
+    padding-inline: 10px;
+}
+
+.title {
+grid-column: 1 / span 8;
+text-align: center;
+border-style: double;
+}
+
+.gentext {
+text-align: center;
+place-content: center;
+line-height: 150%;
+font-size: 20px;
+padding: 0px 50px 0px 50px
+}
+
+.shadow {
+font-size: 50px;
+font-family: fantasy;
+font-weight: 700;
+text-shadow: 2px 2px 2px white;
+}
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: large;
+}
+
+th, td {
+    border: 2px solid black;
+}
+
+th, tr:nth-child(odd) {
+    background-color: rgb(212, 170, 170);
+}
+
+#Explore {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    padding: 50px;
+    place-content: center;
+    margin: 50px;
+    background-color: rgb(105, 105, 105);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+img.imgborder {
+    border: 10px solid rgb(77, 77, 77);
+    border-radius: 5px;
+    width: 90%;
+    
+}
+
+.imgbackground {
+    background-image: url("PlaceholderIMG.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+#transitionpractice {
+    border-radius: 10px;
+    width: 50%;
+    height: 10%;
+    background-color: blue;
+    transition: width 3s, background-color 3s, transform 3s, height 3s;
+}
+
+#transitionpractice:active {
+    width: 100%;
+    height: 30%;
+    background-color: red;
+    transform: translate(0px, 100px);
+}
+
+#storeTable {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.itemThumbnail {
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+}
+
+.shopSegment {
+    text-align: center;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+.footerStyle {
+    background-color: rgb(46, 46, 46);
+}
+
+/*Start of Desktop*/
+
+@media screen and (min-width: 960px) {
+
+}
+
+/*End of Desktop*/
+
+/*Start of Mobile*/
+
+@media screen and (max-width: 639px) {
+    
+}
+
+/*End of Mobile*/
+
+/*Start of Tablet*/
+
+@media screen and (min-width: 640px) {
+    
+}
+
+/*End of Tablet*/

@@ -1,0 +1,291 @@
+
+body {
+    background-color: white;
+}
+
+.margin-table {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.leftMargin {
+    background-image: linear-gradient(to right, rgb(180, 180, 180), rgb(200, 200, 200), white);
+    min-height: 1000px;
+}
+
+.rightMargin {
+    background-image: linear-gradient(to left, rgb(180, 180, 180), rgb(200, 200, 200), white);
+    min-height: 1000px;
+}
+
+/*.heading-layout {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto 80px;
+    column-gap: 40px;
+    row-gap: 30px;
+    place-content: center;
+    font-size: 50px;
+    text-align: center; 
+    background-color: rgb(105, 105, 105);
+    border-radius: 10px;
+}*/
+
+.heading-layout {
+    text-align: center;
+    place-content: center;
+    color: rgb(165, 165, 165);
+    background-image: linear-gradient(rgb(117, 117, 117), rgb(48, 48, 48), rgb(48, 48, 48));
+}
+
+.title img {
+    width: 70%;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    width: 97%;
+    padding: 1em;
+    background-color: rgb(48, 48, 48);
+}
+
+nav a {
+    background-color: rgb(69, 69, 69);
+    border-radius: 5px;
+    color: white;
+    padding-inline: 10px;
+    font-size: 1.5em;
+    width: 100%;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.dropDownNav {
+    display: inline;
+    text-align: right;
+    place-content: right;
+    position: absolute;
+    right: 8px;
+}
+
+.dropDownNav button {
+    width: 70px;
+    height: 50px;
+    background-color: rgb(48, 48, 48);
+}
+
+.dropDownNav ul {
+    list-style: none; 
+    position: relative;
+    top: -20px;
+}
+
+.dropDownNav ul li {
+    
+    font-size: 2em;
+    border: solid 2px black;
+    border-bottom: none;
+    background-color: rgb(49, 49, 49);
+}
+
+.dropDownNav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.5em;
+}
+
+.dropDownNav ul li a:hover {
+    background-color: grey;
+}
+
+.content {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+#welcome img {
+    width: 60%;
+}
+
+footer {
+    background-color: rgb(48, 48, 48);
+    padding: 1em;
+    text-align: center;
+}
+
+footer div {
+    display: inline-block;
+    padding: 2em;
+    color: white;
+}
+
+footer a {
+    color: grey;
+}
+
+/*Start Mobile*/
+
+@media screen and (max-width: 639px) {
+    
+    .title img {
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    a.navlinks {
+        font-size: 1em;
+    }
+
+    footer div {
+        font-size: 1em;
+    }
+}
+
+/*End Mobile*/
+
+
+/*Start Tablet*/
+
+@media screen and (min-width: 640px) {
+    
+    .dropDownNav {
+        display: none;
+    }
+}
+
+/*End Tablet*/
+
+
+/*Start Desktop*/
+
+@media screen and (min-width: 960px) {
+
+}
+
+/*End Desktop*/
+
+
+/*Calculator Start*/
+
+#calculator {
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    background-color: grey;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+#calculator table caption input {
+    width: 255px;
+    font-size: 40px;
+    text-align: right;
+    box-shadow: 2px 2px black;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+#calculator table tr td input{
+    width: 60px;
+    font-size: 30px;
+    box-shadow: 2px 2px black;
+    margin: 2px;
+}
+
+/*Calculator Start*/
+
+
+/*store practice*/
+
+#tableOfContents {
+    text-align: left;
+}
+
+#basket {
+    text-align: left;
+}
+
+#storeContainer {
+    margin: 10px;
+    text-align: center;
+}
+
+.storeCell {
+    display: inline-block;
+    background-image: linear-gradient(white, rgb(223, 223, 223));
+    /*border: solid 5px rgb(137, 139, 146);*/
+    width: 250px;
+    height: 450px;
+    padding: 10px;
+    margin: 12px;
+    border: solid 2px grey;
+    border-radius: 1em;
+}
+
+.storeCell:hover {
+    border: solid 2px black;
+}
+
+.storeCell img {
+    width: 175px;
+    height: 250px;
+    border: solid 1px grey;
+}
+
+.storeCell h2 {
+    text-align: left;
+    height: 40px;
+}
+
+.storeCell p {
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(68, 98, 199);
+}
+
+.storeCell button {
+    width: 80%;
+    height: auto;
+    font-size: 25px;
+    box-shadow: 2px 2px rgb(61, 61, 61);
+    background-color: rgb(175, 137, 13);
+    border-radius: 1em;
+}
+
+.itemAdded {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    border: solid 2px black;
+    border-radius: 0.5em;
+    background-color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.basketPara {
+    font-size: 150%;
+}
+
+.removeBin {
+    width: 100%;
+    place-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.removeBin img {
+    width: 100%;
+    text-align: center;
+}
+
+.removeBin img:hover {
+    width: 90%;
+    background-color: rgb(235, 235, 235);
+}
